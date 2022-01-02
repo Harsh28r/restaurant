@@ -1,0 +1,153 @@
+*{ 
+margin: 0;
+padding: 0;
+ font-family:fangsong;
+}
+.main{
+   width: 100%;
+   height: 300vh;
+position: relative;
+overflow: hidden;
+background: linear-gradient(to right, #02ffff,#fa0000);
+}
+nav{
+   width: 100%;
+   position: sticky;
+   margin: 50px; ;
+   z-index:100;
+   display: flex;
+   align-items:center;
+}
+.text{
+  width: 2000px;
+  text-align:start;
+  justify-items:last baseline ;
+ size:20px;
+ font-style: italic;
+ font-size:xx-large;
+ text-orientation:upright;
+ position: absolute;
+ top: 2px;
+ left: 500px;
+
+ 
+ }
+ .text {
+    animation: flicker 0.5s infinite alternate;
+    color:#02ffff
+   
+  }
+  
+  h1 {
+    font-size: 4.2rem;    
+  }
+  
+  /* Flickering animation */
+  @keyframes flicker {
+      
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  
+  /* Additional styling */
+    
+  h2 {
+   font-size: 1.8rem;
+  }
+  .container {
+    margin-top: 20vh;
+  }
+  
+  body {
+    font-size: 18px;
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #010a01;
+  }  
+  
+  h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+.logo{
+  flex-basis: 600%;
+}
+.logo img{
+   width: 1500px;
+   height: fit-content;
+   float: left
+}
+.nav-links{
+   flex: 1000;
+   text-align:end;
+   align-items:flex-end;
+   text-orientation: sideways-right;
+   position: absolute;
+   top: 0px;
+   
+}
+.nav-links ul li{
+list-style-type:none;
+display:inline-block;
+margin: 20 50px;
+text-orientation: unset;
+
+
+}
+.nav-links ul li a {
+color: rgb(255, 255, 255);
+text-decoration: double;
+}
+.photo{
+position:absolute;
+top: 900px;
+width: fit-content;
+zoom: initial;
+}
+.a.active,a:hover{
+  background-color: #000000;
+  box-shadow: black;
+  transition: .5s;
+}
+.r1{
+  position:absolute;
+  top: 500px;
+  right: -1px;
+image-orientation: flip;
+}
+.r2{
+width: -600px;
+min-height:100%;
+position: absolute;  
+bottom:600px;
+right: 5000px;
+top: -900px;
+left: -8%;
+
+}
+.body-content{
+  color: #b40f0f;
+  position:absolute;
+  top: 1000px;
+}
+.text2{
+position: absolute;
+top: 700px; 
+color: darkorchid; 
+}
